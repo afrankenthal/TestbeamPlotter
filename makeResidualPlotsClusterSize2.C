@@ -44,10 +44,13 @@ void makeResidualPlotsClusterSize2() {
 				gStyle->SetOptStat(0);
 				gStyle->SetOptFit(1);
 
-				TFile * file1 = TFile::Open("../Data/Chewie_Runs10617_10681_Weinan_v3.root");
-				TFile * file2 = TFile::Open("../Data/Chewie_Runs10408_10418.root");
-				TFile * file3 = TFile::Open("../Data/Chewie_Runs1924_1964.root");
-				TFile * file4 = TFile::Open("../Data/Chewie_Runs1539_1547_DUT1_Weinan.root");
+				//TFile * file1 = TFile::Open("../Data/Chewie_Runs10617_10681_Weinan_v3.root");
+				TFile * file1 = TFile::Open("../../TB_Data/ChewieOutput/Chewie_Runs10408_10418.root");
+				TFile * file2 = TFile::Open("../../TB_Data/ChewieOutput/Chewie_Runs10408_10418.root");
+				TFile * file3 = TFile::Open("../../TB_Data/ChewieOutput/Chewie_Runs10408_10418.root");
+				TFile * file4 = TFile::Open("../../TB_Data/ChewieOutput/Chewie_Runs10408_10418.root");
+				//TFile * file3 = TFile::Open("../Data/Chewie_Runs1924_1964.root");
+				//TFile * file4 = TFile::Open("../Data/Chewie_Runs1539_1547_DUT1_Weinan.root");
 
 				//////////////////////////////////////
 				TH1F * psi46_25x100_X = (TH1F*)file1->Get("Resolution/Dut0/XResiduals/hXResidualsClusterSize2_Dut0");
